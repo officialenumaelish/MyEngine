@@ -16,16 +16,18 @@ namespace MonoGameLibrary.Graphics
         public void Add(Sprite sprite, Vector2 posicion)
         {
             if (sprite == null) return;
+            sprite.SpriteId = (_sprites.Count() + _animatedSprites.Count()) + 1;
             _sprites[sprite] = posicion;
         }
 
         public void Add(AnimatedSprite animatedSprite, Vector2 posicion)
         {
             if (animatedSprite == null) return;
+            animatedSprite.SpriteId = (_sprites.Count() + _animatedSprites.Count()) + 1;
             _animatedSprites[animatedSprite] = posicion;
         }
 
-        public void DrawAll(SpriteBatch batch)
+        public void DrawAll(SpriteBatch batch, GameTime gameTime)
         {
 
             foreach (var kvp in _sprites)
@@ -36,7 +38,8 @@ namespace MonoGameLibrary.Graphics
 
             foreach (var kvp in _animatedSprites)
             {
-                if (!_animatedSpriteIds.Contains(kvp.Key.AnimatedSpriteId))
+                kvp.Key.Update(gameTime);
+                if (!_animatedSpriteIds.Contains(kvp.Key.SpriteId))
                     kvp.Key.Draw(batch, kvp.Value);
             }
         }
@@ -46,6 +49,12 @@ namespace MonoGameLibrary.Graphics
             if (_sprites.ContainsKey(sprite))
                 _sprites[sprite] = nuevaPosicion;
         }
+        public void SetPosition(AnimatedSprite animatedSprite, Vector2 nuevaPosicion)
+        {
+            if (_animatedSprites.ContainsKey(animatedSprite))
+                _animatedSprites[animatedSprite] = nuevaPosicion;
+        }
+
 
         public void DrawAllExcept(SpriteBatch batch, HashSet<Sprite> excludeSprites)
         {
@@ -56,11 +65,12 @@ namespace MonoGameLibrary.Graphics
             }
         }
 
-        public void DrawAllExcept(SpriteBatch batch, HashSet<AnimatedSprite> excludeSprites)
+        public void DrawAllExcept(SpriteBatch batch, HashSet<AnimatedSprite> excludeSprites, GameTime gameTime)
         {
             foreach (var kvp in _animatedSprites)
             {
-                if (!excludeSprites.Contains(kvp.Key) && !_animatedSpriteIds.Contains(kvp.Key.AnimatedSpriteId))
+                kvp.Key.Update(gameTime);
+                if (!excludeSprites.Contains(kvp.Key) && !_animatedSpriteIds.Contains(kvp.Key.SpriteId))
                     kvp.Key.Draw(batch, kvp.Value);
             }
         }
@@ -82,7 +92,7 @@ namespace MonoGameLibrary.Graphics
 
         public void OcultarHastaNuevoAviso(AnimatedSprite spriteAnimado)
         {
-            _spriteIds.Add(spriteAnimado.AnimatedSpriteId);
+            _spriteIds.Add(spriteAnimado.SpriteId);
         }
 
         public void MostrarSprite(Sprite sprite)
@@ -99,7 +109,7 @@ namespace MonoGameLibrary.Graphics
         {
             try
             {
-                _animatedSpriteIds.Remove(spriteAnimado.AnimatedSpriteId);
+                _animatedSpriteIds.Remove(spriteAnimado.SpriteId);
             }
             catch { }
         }

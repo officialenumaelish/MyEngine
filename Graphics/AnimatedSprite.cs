@@ -9,7 +9,6 @@ namespace MonoGameLibrary.Graphics
 {
     public class AnimatedSprite : Sprite
     {
-        public int AnimatedSpriteId;
         private int _currentFrame;
         private TimeSpan _elapsed;
         private Animation _animation;
