@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using MonoGameLibrary.Audio;
+using MonoGameLibrary.Events;
+using MonoGameLibrary.Graphics;
 
 namespace MonoGameLibrary.Scenes
 {
     public abstract class Scene : IDisposable
     {
 
+        public SpriteManager SpriteManager = new SpriteManager();
+        public AudioController Audio = new AudioController();
+        public Camera2D camera = new Camera2D();
 
         /// <summary>
         /// Creates a new scene instance.
