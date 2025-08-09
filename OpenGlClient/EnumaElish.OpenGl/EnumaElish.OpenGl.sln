@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumaElish.OpenGl", "EnumaElish.OpenGl.csproj", "{2DAAF6D7-EAFF-4094-490D-72D67DBE1DAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DAAF6D7-EAFF-4094-490D-72D67DBE1DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAAF6D7-EAFF-4094-490D-72D67DBE1DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAAF6D7-EAFF-4094-490D-72D67DBE1DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAAF6D7-EAFF-4094-490D-72D67DBE1DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7121675-911E-4D5C-A0FA-F35CAD2F8B74}
+	EndGlobalSection
+EndGlobal
