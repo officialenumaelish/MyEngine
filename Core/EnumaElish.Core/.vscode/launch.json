@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Enuma Elish OpenGL",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-all",
+            "program": "/home/memphis-yomael/Proyectos .net/Monogame/EnumaElish/OpenGlClient/EnumaElish.OpenGl/bin/Debug/net8.0/EnumaElish.OpenGl.dll",
+            "args": [],
+            "cwd": "/home/memphis-yomael/Proyectos .net/Monogame/EnumaElish/OpenGlClient/EnumaElish.OpenGl",
+            "stopAtEntry": false,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../GameEngine"
+		},
+		{
+			"path": "../../OpenGlClient"
+		}
+	]
+}

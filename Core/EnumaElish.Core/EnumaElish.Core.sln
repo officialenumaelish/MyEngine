@@ -1,0 +1,36 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumaElish.Core", "EnumaElish.Core.csproj", "{84983C3B-7740-A0E7-8DA0-C9376629162B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameLibrary", "..\..\GameEngine\MonoGameLibrary.csproj", "{25670F5D-AB05-4ED8-8BB9-7C9C88492B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumaElish.OpenGl", "..\..\OpenGlClient\EnumaElish.OpenGl\EnumaElish.OpenGl.csproj", "{06C83A62-3F01-44A8-821D-E411754BD910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84983C3B-7740-A0E7-8DA0-C9376629162B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84983C3B-7740-A0E7-8DA0-C9376629162B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84983C3B-7740-A0E7-8DA0-C9376629162B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84983C3B-7740-A0E7-8DA0-C9376629162B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25670F5D-AB05-4ED8-8BB9-7C9C88492B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25670F5D-AB05-4ED8-8BB9-7C9C88492B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25670F5D-AB05-4ED8-8BB9-7C9C88492B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25670F5D-AB05-4ED8-8BB9-7C9C88492B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C83A62-3F01-44A8-821D-E411754BD910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C83A62-3F01-44A8-821D-E411754BD910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C83A62-3F01-44A8-821D-E411754BD910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C83A62-3F01-44A8-821D-E411754BD910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE281B84-7B9B-44F6-A606-A05BD0E6A369}
+	EndGlobalSection
+EndGlobal

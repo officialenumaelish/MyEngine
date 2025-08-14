@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-all",
+            "dependsOn": [
+                "build-core",
+                "build-opengl"
+            ],
+            
+        },
+        {
+            "label": "build-core",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "/home/memphis-yomael/Proyectos .net/Monogame/EnumaElish/Core/EnumaElish.Core/EnumaElish.Core.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "build-opengl",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "/home/memphis-yomael/Proyectos .net/Monogame/EnumaElish/OpenGlClient/EnumaElish.OpenGl/EnumaElish.OpenGl.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            
+        },
+    
+    ],
+    
+}
