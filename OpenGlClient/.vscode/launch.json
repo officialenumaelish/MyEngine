@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MonoGame OpenGL (Debug)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/EnumaElish.OpenGl/bin/Debug/net8.0/EnumaElish.OpenGl.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/EnumaElish.OpenGl",
+            "stopAtEntry": false,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "requireExactSource": false
+        }
+    ]
+}
